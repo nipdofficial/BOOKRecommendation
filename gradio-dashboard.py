@@ -78,7 +78,7 @@ tones = ["All", "Happy", "Surprising", "Angry", "Suspenseful", "Sad"]
 ratings = ["All"] + sorted(books["rating_category"].dropna().unique())
 
 with gr.Blocks(theme=gr.themes.Glass()) as dashboard:
-    gr.Markdown("# 📚 Semantic Book Recommender")
+    gr.Markdown("# 📚 Book Sphere")
     with gr.Row():
         user_query = gr.Textbox(label="Enter a book description:",
                                 placeholder="e.g., A story about friendship and adventure")
